@@ -127,7 +127,7 @@ local function MyMove(opt)
 end
 
 -- ロケーション、クイックフィックスを良い感じに移動
-vim.keymap.set({'n'},  '<C-n>',
+vim.keymap.set({'v', 'n'},  '<C-n>',
 function()
     local qw = vim.fn.getqflist({winid = 0}).winid
     local lw = vim.fn.getloclist(0, {winid = 0}).winid
@@ -140,7 +140,7 @@ function()
     end
 end, { })
 
-vim.keymap.set({'n'},  '<C-p>',
+vim.keymap.set({'v', 'n'},  '<C-p>',
 function()
     local qw = vim.fn.getqflist({winid = 0}).winid
     local lw = vim.fn.getloclist(0, {winid = 0}).winid
