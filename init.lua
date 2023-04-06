@@ -4,6 +4,11 @@ vim.g.python3_host_prog = '/usr/bin/python3'
 require('opt')
 --
 require('plugin.dein')
+require('plugin.nvim_lspconfig')
+require('plugin.nvim_cmp')
+require('plugin.cmp_nvim_lsp')
+require('plugin.vim_vsnip')
+require('plugin.tokyonight')
 
 -- " terminal commands
 vim.api.nvim_create_user_command('HTERMINAL', 'split|term', { nargs = 0})
